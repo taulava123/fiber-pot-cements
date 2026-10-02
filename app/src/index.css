@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Warm earthy palette */
+    --background: 36 33% 95%;
+    --foreground: 24 22% 16%;
+    --card: 36 30% 98%;
+    --card-foreground: 24 22% 16%;
+    --popover: 36 30% 98%;
+    --popover-foreground: 24 22% 16%;
+    --primary: 14 44% 44%;
+    --primary-foreground: 36 33% 96%;
+    --secondary: 32 24% 89%;
+    --secondary-foreground: 24 22% 20%;
+    --muted: 32 20% 90%;
+    --muted-foreground: 25 12% 42%;
+    --accent: 28 32% 87%;
+    --accent-foreground: 24 22% 20%;
+    --destructive: 0 62% 42%;
+    --destructive-foreground: 36 33% 96%;
+    --border: 30 18% 82%;
+    --input: 30 18% 80%;
+    --ring: 14 44% 44%;
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: "Fraunces", ui-serif, Georgia, serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
